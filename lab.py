@@ -16,12 +16,12 @@
 if __name__ == '__main__':
     '''
     Main method of application
-    Linear programming only presented here wrt demo of tuple
+    Linear programming only presented here wrt demo of lists, tuples and dictionaries.
     Parameters:
-    none
+    Student L Numbers.
     
     Returns:
-    none
+    Prints Module and Marks Obtained of the given L numbers.
     '''
 
 
@@ -31,11 +31,8 @@ if __name__ == '__main__':
     python_grade_dictionary = {'L12345':69, 'L54321':58}
 
     input_l_number = input("Enter Student's L number")
-    if input_l_number == 'L12345':
-        index_l_number = 0
-    elif input_l_number == 'L54321':
-        index_l_number = 1
-
-    print(module_list[index_l_number])
-
-
+    if input_l_number not in l_numbers:
+        print("Invalid Entry")
+    else:
+        print(module_list[0], "Marks Obtained = ", java_grade_dictionary[input_l_number])
+        print(module_list[1], "Marks Obtained = ", python_grade_dictionary[input_l_number])
